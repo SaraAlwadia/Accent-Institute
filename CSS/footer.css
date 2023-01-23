@@ -1,0 +1,108 @@
+:root {
+    /*Theme Color*/
+    --main_color: #0d4496;
+    --second_color: #FEFEFE;
+    --btn_color: #A3A3A3;
+    --white_color: #FFF;
+    --shadow-color: #cfcfcfd7;
+    /*Theme font-family*/
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Start Footer */
+
+footer {
+    background: #111;
+    padding: 80px 0 0;
+    position: relative;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+footer .container h2 {
+    color: var(--white_color);
+    margin-bottom: 10px;
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+
+footer .container p {
+    width: 200px;
+}
+
+footer .container p,
+footer .container a {
+    color: var(--second_color);
+    line-height: 1.7;
+}
+
+footer .social i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .arrow i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white_color);
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid var(--white_color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+footer .arrow:hover i {
+    color: var(--main_color);
+    border: 1px solid var(--main_color);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.copy {
+    text-align: center;
+    color: var(--second_color);
+    padding: 20px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 440px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .content p {
+        width: 100%;
+    }
+}
+
+/* End Footer */

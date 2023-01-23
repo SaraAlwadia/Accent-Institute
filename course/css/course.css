@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ :root {
+    /*Theme Color*/
+    --main_color: #0d4496;
+    --second_color: #FEFEFE;
+    --btn_color: #A3A3A3;
+    --white_color: #FFF;
+    --shadow-color: #cfcfcfd7;
+}
+
+/*Start Global*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+/*End Global*/
+
+/* Start Course Container */
+
+.course {
+    padding: 100px 0;
+}
+
+.course-container {
+    display: flex;
+    gap: 80px;
+}
+
+.course-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.course-content h2 {
+    font-size: 24px;
+    margin: 40px 0 16px;
+}
+
+.course-container ul li {
+    line-height: 1.7;
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.course-container p {
+    line-height: 1.7;
+}
+
+.course-details {
+    width: 300px;
+    height: fit-content;
+    border: 1px solid var(--btn_color);
+}
+
+.course-details img {
+    width: 100%;
+}
+
+.course-details .join-course {
+    display: block;
+    outline: none;
+    border: 1px solid var(--main_color);
+    background: var(--main_color);
+    color: var(--white_color);
+    padding: 10px;
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    cursor: pointer;
+}
+.course-details .join-course:hover {
+    border: 1px solid var(--main_color);
+    background: var(--white_color);
+    color: var(--main_color);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+
+
+.course-details table {
+    padding: 20px 10px;
+    margin: 10px 0;
+    width: 270px;
+}
+
+.course-details table tr{
+    width: 200px;
+}
+
+.course-details table td{
+    padding: 10px;
+}
+/* End Course Container */
+
+
+/**************Responsive***************/
+
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media only screen and (min-width: 665px) and (max-width: 991px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .container {
+        width: 98%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .course-container {
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .course-details {
+        margin: auto;
+    }
+}

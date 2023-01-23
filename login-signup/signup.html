@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../login-signup/css/login-signup.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="../imgs/logo.jpeg" type="image/x-icon" />
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a class="logo" href="../index.html"><img src="../imgs/logo.PNG" alt=""></a>
+        </div>
+    </nav>
+    <section class="login-signup">
+        <div class="login-signup-container">
+            <a href="../index.html" class="back-home">
+                <i class="fa-solid fa-arrow-left-long"></i>
+                <h4>Back to Home</h4>
+            </a>
+            <form action="" class="signup" id="signup" method="post">
+                <label for="signup-username">User Name</label>
+                <input type="text" name="signup-mail" id="signup-username" placeholder="UserName" pattern="[A-Za-z0-9]+" required>
+                <label for="login-mail">Email</label>
+                <input type="email" name="signup-mail" id="signup-mail" placeholder="example@gmail.com" required>
+                <label for="signup-pw">Password</label>
+                <input type="password" name="signup-pw" id="signup-pw" placeholder="••••••••" minlength="8" maxlength="20" required>
+                <label for="signup-phone">Mobile Number</label>
+                <input type="tel" name="signup-phone" id="signup-phone" placeholder="Start with 972/970" pattern="[0-9]{12}" required>
+                <div class="policy">
+                    <p>Your personal data will be used to support your experience throughout this website</p>
+                </div> 
+
+                <button class="submit" type="submit" id="signup-submit" name="signup-submit">REGISTER</button>
+                <p class="have-acc">If you have account? <a href="./login.html">Login</a></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="content">
+                <h2>Address</h2>
+                <p>Gaza City, Hassania Building, 3rd floor</p>
+            </div>
+            <div class="content">
+                <h2>Institute</h2>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about-us/about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="../courses/courses.html">Courses</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Account</h2>
+                <ul>
+                    <li>
+                        <a href="../login-signup/signup.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="../login-signup/login.html">Loging</a>
+                    </li>
+                    <li>
+                        <a href="../help/help.html">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content social">
+                <h2>Community</h2>
+                <a href="https://www.facebook.com/accent.ITI" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/accent_institute/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/message/MXBDQ5SNAIAPD1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="arrow"><i class="fa-solid fa-chevron-up"></i></div>
+        <div class="copy">&copy; Accent Institute 2022</div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../JS/move.js"></script>
+
+</body>
+</html>
